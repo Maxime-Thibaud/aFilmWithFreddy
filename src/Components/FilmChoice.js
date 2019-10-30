@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from "axios"
+import FilmCard from './FilmCard'
 
 class FilmChoice extends React.Component {
     constructor (props) {
@@ -20,9 +21,9 @@ class FilmChoice extends React.Component {
 			.then(data => {
 				this.setState({
                     title: data.movies[randomId].title,
-                    filmdirector: data.movies[randomId].director,
+                    director: data.movies[randomId].director,
                     posterUrl: data.movies[randomId].posterUrl,
-                    year: data.movies[randomId].year                 					
+                    year: data.movies[randomId].year                					
 				})
 			})
     }
@@ -30,14 +31,7 @@ class FilmChoice extends React.Component {
         return (
             <div>
                 <button onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
-                <div>
-                    <img 
-                        src={this.state.posterUrl}
-                        alt={this.state.title} />
-                    <p> {this.state.title} </p>
-                    <p> {this.state.director} </p>
-                    <p> {this.state.year} </p>
-                </div>
+                < FilmCard {...this.state} />
             </div>
         )
     }
