@@ -1,14 +1,15 @@
 import React from 'react'
 import axios from "axios"
 import FilmCard from './FilmCard'
+import Cinema from './Cinema'
 
 class FilmChoice extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-            title: "Plouf",
-            director: "Pouet",
-            year: "1901",
+            title: "Loading...",
+            director: "",
+            year: "",
             posterUrl: "https://nsa40.casimages.com/img/2019/10/07/1910070355402418.jpg"
         }
         this.getMovie = this.getMovie.bind(this)     
@@ -32,10 +33,10 @@ class FilmChoice extends React.Component {
             <div>
                 <button onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
                 < FilmCard {...this.state} />
+                < Cinema {...this.state} />
             </div>
         )
     }
 }
-
 
 export default FilmChoice
