@@ -7,7 +7,7 @@ function Cinema ({ posterUrl }) {
             <div className = 'BoxOfPictureFromTheMovie'>
                 <img 
                     className = 'PictureFromTheMovie' 
-                    src= {posterUrl} 
+                    src= {posterUrl === "" ? "" : posterUrl}
                     alt="Picture of the movie"/>
             </div>
         </div>

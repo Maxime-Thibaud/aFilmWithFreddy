@@ -10,7 +10,7 @@ class FilmChoice extends React.Component {
             title: "Loading...",
             director: "",
             year: "",
-            posterUrl: "https://nsa40.casimages.com/img/2019/10/07/1910070355402418.jpg"
+            posterUrl: ""
         }
         this.getMovie = this.getMovie.bind(this)     
     }
