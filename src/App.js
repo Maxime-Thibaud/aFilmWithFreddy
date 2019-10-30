@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
-import FilmChoice from './Components/FilmChoice'
+import React from "react"
+import "./App.css"
+import FilmChoice from "./Components/FilmChoice"
 
 function App() {
-  return (
-    <div> 
-      < FilmChoice />
-    </div>
-  );
+	return (
+		<div>
+			<FilmChoice />
+		</div>
+	)
 }
 
-export default App;
+export default App
