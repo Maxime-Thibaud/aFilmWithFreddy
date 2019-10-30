@@ -1,4 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .Card {
-    border: solid red 50px;
-    width: 30%;
+    background-color: rgba(44, 44, 44, 0.95);
+    border: solid red 1px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.filmTitle {
+    color: #EAEAEA;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+.filmInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.filmDirector {
+    color: #EAEAEA;
+    font-size: 1.2em;
+    margin: 1em;
+}
+.filmYear {
+    color: #EAEAEA;
+    font-size: 1.2em;
+    margin: 1em;
+}
+.imageLayout {
+    display: flex;
+    justify-content: center;
+    width: 82%;
+    height: 600px;
+    background-color: #C4C4C4;
+    margin-top: 1em;
 }

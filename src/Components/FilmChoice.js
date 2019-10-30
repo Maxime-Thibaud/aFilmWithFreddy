@@ -2,12 +2,13 @@ import React from 'react'
 import axios from "axios"
 import FilmCard from './FilmCard'
 import Cinema from './Cinema'
+import './FilmChoice.css'
 
 class FilmChoice extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-            title: "Loading...",
+            title: "",
             director: "",
             year: "",
             posterUrl: ""
@@ -31,7 +32,9 @@ class FilmChoice extends React.Component {
     render () {
         return (
             <div>
-                <button onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
+                <div className = "boxButtonGetMovie">
+                    <button className = "getMovie" onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
+                </div>
                 < FilmCard {...this.state} />
                 < Cinema {...this.state} />
             </div>
