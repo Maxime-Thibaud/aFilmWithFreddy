@@ -31,7 +31,7 @@ class FilmChoice extends React.Component {
     }
     render () {
         return (
-            <div>
+            <div className = 'CinemaBackground'>
                 <div className = "boxButtonGetMovie">
                     <button className = "getMovie" onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
                 </div>
