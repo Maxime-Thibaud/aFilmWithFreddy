@@ -1,15 +1,17 @@
 import React from 'react'
 import axios from "axios"
 import FilmCard from './FilmCard'
+import Cinema from './Cinema'
+import './FilmChoice.css'
 
 class FilmChoice extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
-            title: "Plouf",
-            director: "Pouet",
-            year: "1901",
-            posterUrl: "https://nsa40.casimages.com/img/2019/10/07/1910070355402418.jpg"
+            title: "",
+            director: "",
+            year: "",
+            posterUrl: ""
         }
         this.getMovie = this.getMovie.bind(this)     
     }
@@ -29,13 +31,15 @@ class FilmChoice extends React.Component {
     }
     render () {
         return (
-            <div>
-                <button onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
+            <div className = 'CinemaBackground'>
+                <div className = "boxButtonGetMovie">
+                    <button className = "getMovie" onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
+                </div>
                 < FilmCard {...this.state} />
+                < Cinema {...this.state} />
             </div>
         )
     }
 }
-
 
 export default FilmChoice
