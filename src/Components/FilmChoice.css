@@ -10,6 +10,14 @@
 .getMovieSelected {
     visibility: hidden;
 }
+
+.on {
+    
+}
+
+.off {
+    visibility: hidden;
+}
 .CinemaBackground {
     background-image: url('https://image.noelshack.com/fichiers/2019/44/3/1572445894-capture-d-ecran-de-2019-10-30-14-45-36.png');
     height: 100vh;
