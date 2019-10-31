@@ -3,7 +3,9 @@ import "./App.css"
 import FilmChoice from "./Components/FilmChoice"
 import LivingRoom from './Components/LivingRoom'
 import Graveyard from './Components/Graveyard'
+import { Switch, Route} from 'react-router-dom'
 
+<<<<<<< HEAD
 class App extends React.Component {
 	constructor(props) {
 		super(props)
@@ -75,6 +77,18 @@ class App extends React.Component {
 		)
 	}
 	
+=======
+function App() {
+	return (
+		<div>
+			<Switch>
+				<Route exact path="/" component= {LivingRoom}/>
+				<Route path="/filmchoice" component= {FilmChoice}/>
+				<Route path="/graveyard" component= {Graveyard}/>
+			</Switch>
+		</div>
+	)
+>>>>>>> 24d84bb1877dbb410958936729b350d0e11c7b22
 }
 
 export default App
