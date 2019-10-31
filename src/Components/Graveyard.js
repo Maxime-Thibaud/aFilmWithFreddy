@@ -9,7 +9,6 @@ function Graveyard(props) {
         <p className="userDobDod"> {props.location.state.userDob} - 2019 </p>
         <p className="userDeath"> {props.location.state.userFear} </p>
       </div>      
-      <button>Retour à l'accueil</button>
     </div>
   );
 }

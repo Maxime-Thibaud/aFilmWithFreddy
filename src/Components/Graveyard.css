@@ -2,19 +2,32 @@
     background-image: url(https://image.noelshack.com/fichiers/2019/44/4/1572517669-rows-of-graves-sans-youdie.jpg);
     height: 100vh;
     background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
   }
 .tomb {
-  color: lightgray;
+  color:
+  lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   width: 15%;
   height: 15vh;
-  background-color: white;
   margin: auto;
 }
 .userGrave {
+  font-size: 3em;
+font-weight: bold;
+}
+.userDobDod {
   font-size: 1.5em;
   font-weight: bold;
-  border: solid red 5px;
+}
+.userDeath {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.graveyard button {
+  width: 20%;
 }
