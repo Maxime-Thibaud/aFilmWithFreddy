@@ -3,9 +3,11 @@ import "./App.css"
 import FilmChoice from "./Components/FilmChoice"
 import LivingRoom from './Components/LivingRoom'
 import Graveyard from './Components/Graveyard'
-import { Switch, Route} from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import Home from './Components/Home'
 
-<<<<<<< HEAD
+
 class App extends React.Component {
 	constructor(props) {
 		super(props)
@@ -36,59 +38,19 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className = "homeBackground">
-					<div className = "beginStory">
-						<p className="storyText">Aujourd'hui, c'est Halloween, vous n'avez rien de prévu. Vous vous sentez un peu seul...	</p>
-					</div>
-					<div className="userForm">						
-						<p>Entrez votre nom :</p>
-						<input 
-							name="username"
-							type="text" 
-							value={this.state.userName}
-							onChange={this.usernameHandleChange}
-						/>
-						<p>Entrez votre année de naissance :</p>
-						<input 
-							name="dob" 
-							type="text" 
-							value={this.state.userDob}
-							onChange={this.dobHandleChange}
-						/>
-						<p>Votre plus grande peur... C'est d'être : :</p>
-						<select 
-							type="select" 
-							name="fear" 
-							size="4" 
-							onChange={this.fearHandleChange}
-							value={this.state.userFear}>
-							<option value="tué par un clown">"tué par un clown"</option>
-							<option value="mordu par un vampire">"mordu par un vampire"</option>
-							<option value="décapité par une goule">"décapité par une goule"</option>
-							<option value="écrasé par un piano">"écrasé par un piano"</option>
-						</select>
-						<button onClick={this.getUserInfo}>Commencer</button>	
-					</div>
-				</div>
-				<LivingRoom />
-				<FilmChoice />
-				<Graveyard {...this.state}/>
+					<Route exact path = "/" component = {()=> <Home 
+																{...this.state}
+																usernameHandleChange={this.usernameHandleChange}
+																dobHandleChange={this.dobHandleChange}
+																fearHandleChange={this.fearHandleChange} />}
+																 />
+					<Route path="/livingroom" component = {LivingRoom}/>
+					<Route path="/filmchoice" component = {FilmChoice}/>
+					<Route path="/graveyard" component = {() => <Graveyard {...this.state}/>}/>
 			</div>	
 		)
 	}
-	
-=======
-function App() {
-	return (
-		<div>
-			<Switch>
-				<Route exact path="/" component= {LivingRoom}/>
-				<Route path="/filmchoice" component= {FilmChoice}/>
-				<Route path="/graveyard" component= {Graveyard}/>
-			</Switch>
-		</div>
-	)
->>>>>>> 24d84bb1877dbb410958936729b350d0e11c7b22
+
 }
 
 export default App
