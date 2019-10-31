@@ -9,10 +9,15 @@
 }
 .getMovieSelected {
     visibility: hidden;
+    text-decoration: none;
 }
 
 .on {
-    
+    text-decoration: none;
+}
+.styleLinkOnOff {
+    text-decoration: none;
+    color: black;
 }
 
 .off {
