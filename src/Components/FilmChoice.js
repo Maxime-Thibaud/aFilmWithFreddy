@@ -37,6 +37,7 @@ class FilmChoice extends React.Component {
                         className = {this.state.title === "" ? "getMovie" : "getMovieSelected"} 
                         onClick={this.getMovie}>Laissez Freddy vous choisir un film...</button>
                         <button className = {this.state.year === "" ? "off" : "on"}><Link to={{pathname:"/graveyard", state: this.props.location.state}}>Pouet pouet</Link></button>
+
                 </div>
                 < FilmCard {...this.state} />
             </div>
