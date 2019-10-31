@@ -1,5 +1,6 @@
 .homeBackground {
-	background-color: black;
+    background-image: url(https://image.noelshack.com/fichiers/2019/44/4/1572521445-backgroundforest.jpeg);
+    background-size: cover;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
