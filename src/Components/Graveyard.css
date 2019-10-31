@@ -1,5 +1,20 @@
 .graveyard {
-    background-image: url(https://zupimages.net/up/19/44/3nvo.jpg);
+    background-image: url(https://image.noelshack.com/fichiers/2019/44/4/1572517669-rows-of-graves-sans-youdie.jpg);
     height: 100vh;
     background-size: cover;
   }
+.tomb {
+  color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 15vh;
+  background-color: white;
+  margin: auto;
+}
+.userGrave {
+  font-size: 1.5em;
+  font-weight: bold;
+  border: solid red 5px;
+}
