@@ -1,5 +1,6 @@
 .homeBackground {
-	background-color: black;
+    background-image: url(https://image.noelshack.com/fichiers/2019/44/4/1572521445-backgroundforest.jpeg);
+    background-size: cover;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -33,7 +34,8 @@
 .userForm p {
 	color: white;
 	padding: 1em;
-	text-align: center;
+    text-align: center;
+    font-size: 1.5em;
 }
 .userForm button {
 	padding: 0.5em;
@@ -44,8 +46,11 @@
 	padding: 1em;
 
 }
-
 .storyText {
 	color: white;
-	text-align: center;
+    text-align: center;
+    font-size: 2em;
+}
+.inputForm {
+    font-size: 1.5em;
 }

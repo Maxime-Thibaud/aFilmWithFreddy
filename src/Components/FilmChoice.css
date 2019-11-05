@@ -1,19 +1,44 @@
 .boxButtonGetMovie {
     margin: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 1em;
     margin-bottom: 1em;
+    height: 10vh;
+}
+.boxButtonGetMovie button {
+    width: 130%;
+    padding: 0.5em;
+    font-size: 1.5em;
 }
 .getMovie {
 }
 .getMovieSelected {
+    visibility: hidden;
+    text-decoration: none;
+}
+
+.on {
+    text-decoration: none;
+}
+.styleLinkOnOff {
+    text-decoration: none;
+    color: black;
+}
+
+.off {
     visibility: hidden;
 }
 .CinemaBackground {
     background-image: url('https://image.noelshack.com/fichiers/2019/44/3/1572445894-capture-d-ecran-de-2019-10-30-14-45-36.png');
     height: 100vh;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .BoxOfPictureFromTheMovie {
