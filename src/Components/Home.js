@@ -54,19 +54,22 @@ class Home extends React.Component {
                         value={this.state.userDob}
                         onChange={this.dobHandleChange}
                     />
-                    <p>Votre plus grande peur... C'est d'être : :</p>
-                    <select 
+                    <p>Votre plus grande peur... C'est d'être :</p>
+                    <select
+                        className="inputForm"
                         type="select" 
                         name="fear" 
-                        size="4" 
+                        size="5" 
                         onChange={this.fearHandleChange}
                         value={this.state.userFear}>
-                        <option value="tué par un clown">"tué par un clown"</option>
-                        <option value="mordu par un vampire">"mordu par un vampire"</option>
-                        <option value="décapité par une goule">"décapité par une goule"</option>
-                        <option value="écrasé par un piano">"écrasé par un piano"</option>
+                        <option value="tué par un clown">tué par un clown</option>
+                        <option value="mordu par un vampire">mordu par un vampire</option>
+                        <option value="décapité par une goule">décapité par une goule</option>
+                        <option value="écrasé par un piano">écrasé par un piano</option>
+                        <option value="mort de fatigue après un hackathon">mort de fatigue après un hackathon</option>
+
                     </select>
-                    <button><Link to = {{pathname: "/livingroom", state: this.state}} >Découvrir la suite...</Link></button>												
+                    <button><Link to = {{pathname: "/livingroom", state: this.state}} >Heureusement, un nouvel ami vous invite...</Link></button>												
                 </div>
                 <Route path="/graveyard" component = {() => <Graveyard {...this.state}/>}/>
             </div>
